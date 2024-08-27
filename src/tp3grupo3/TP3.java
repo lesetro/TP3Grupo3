@@ -14,7 +14,7 @@ public class TP3 extends javax.swing.JFrame {
 
     private String correo;
     private String contraseña;
-
+    private boolean PasswordVisible = true;
     /**
      * Creates new form TP3
      */
@@ -88,11 +88,6 @@ public class TP3 extends javax.swing.JFrame {
         jPpanelSecundario.setForeground(new java.awt.Color(102, 102, 255));
 
         jBrecuperarContraseña.setText("Recuperar contraseña");
-        jBrecuperarContraseña.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBrecuperarContraseñaActionPerformed(evt);
-            }
-        });
 
         jBverificar.setText("Verificar");
         jBverificar.addActionListener(new java.awt.event.ActionListener() {
@@ -166,6 +161,16 @@ public class TP3 extends javax.swing.JFrame {
 
         jBIconoOjo.setBackground(new java.awt.Color(153, 51, 255));
         jBIconoOjo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tp3grupo3/eye_.png"))); // NOI18N
+        jBIconoOjo.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentHidden(java.awt.event.ComponentEvent evt) {
+                jBIconoOjoComponentHidden(evt);
+            }
+        });
+        jBIconoOjo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBIconoOjoActionPerformed(evt);
+            }
+        });
 
         jTextField1.setBackground(new java.awt.Color(102, 102, 255));
         jTextField1.setForeground(new java.awt.Color(102, 102, 255));
@@ -251,10 +256,6 @@ public class TP3 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jBrecuperarContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBrecuperarContraseñaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jBrecuperarContraseñaActionPerformed
-
     private void jBverificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBverificarActionPerformed
         // TODO add your handling code here:
         try {
@@ -327,6 +328,26 @@ public class TP3 extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jBIconoOjoComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jBIconoOjoComponentHidden
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBIconoOjoComponentHidden
+
+    private void jBIconoOjoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBIconoOjoActionPerformed
+        // TODO add your handling code here:
+         if (PasswordVisible) {
+        // La contraseña es visible, ocultarla
+        jPasswordTexto.setEchoChar('*'); // Mostrar asteriscos
+        jBIconoOjo.setIcon(new javax.swing.ImageIcon(getClass().getResource("eye_.png"))); // Cambiar el ícono
+        PasswordVisible = false;
+    } else {
+        // La contraseña está oculta, mostrarla
+        jPasswordTexto.setEchoChar((char) 0); // Mostrar texto sin máscara
+        jBIconoOjo.setIcon(new javax.swing.ImageIcon(getClass().getResource("eye_15430196.png"))); // Cambiar el ícono a uno de "ojo abierto"
+        PasswordVisible = true;
+    }
+               
+    }//GEN-LAST:event_jBIconoOjoActionPerformed
 
     /**
      * @param args the command line arguments

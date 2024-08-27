@@ -267,9 +267,6 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Recuperar contrase&#xf1;a"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBrecuperarContrase&#xf1;aActionPerformed"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jBverificar">
               <Properties>
@@ -338,6 +335,10 @@
               <Image iconType="3" name="/tp3grupo3/eye_.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="componentHidden" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="jBIconoOjoComponentHidden"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBIconoOjoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField1">
           <Properties>

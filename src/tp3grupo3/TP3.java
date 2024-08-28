@@ -356,7 +356,7 @@ public class TP3 extends javax.swing.JFrame {
     }//GEN-LAST:event_jBIconoOjoActionPerformed
 
     private void jBrecuperarContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBrecuperarContraseñaActionPerformed
-       JOptionPane.showConfirmDialog(this, "La contraseña ha sido enviada a su correo", "Recuperacion de Contraseña", JOptionPane.ERROR_MESSAGE); // TODO add your handling code here:
+       JOptionPane.showConfirmDialog(this, "¿Desea enviar la contraseña a su correo?", "Recuperacion de Contraseña", JOptionPane.ERROR_MESSAGE); // TODO add your handling code here:
     }//GEN-LAST:event_jBrecuperarContraseñaActionPerformed
 
     /**

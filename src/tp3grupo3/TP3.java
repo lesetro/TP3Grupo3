@@ -158,7 +158,7 @@ public class TP3 extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Inicio de secion");
+        jLabel1.setText("Inicio de sesión");
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Verdana", 2, 18)); // NOI18N

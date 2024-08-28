@@ -316,7 +316,7 @@
               <Font name="Verdana" size="24" style="3"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Inicio de secion"/>
+            <Property name="text" type="java.lang.String" value="Inicio de sesi&#xf3;n"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">

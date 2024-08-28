@@ -4,6 +4,8 @@
   <NonVisualComponents>
     <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
     </Component>
+    <Component class="javax.swing.JColorChooser" name="jColorChooser1">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -111,7 +113,7 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="10" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="JLnombre" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
                       <Component id="jTCorreo" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -267,6 +269,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Recuperar contrase&#xf1;a"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBrecuperarContrase&#xf1;aActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jBverificar">
               <Properties>
@@ -311,7 +316,7 @@
               <Font name="Verdana" size="24" style="3"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Inicio de secion"/>
+            <Property name="text" type="java.lang.String" value="Inicio de sesi&#xf3;n"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">

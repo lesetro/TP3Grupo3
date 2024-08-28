@@ -33,6 +33,7 @@ public class TP3 extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        jColorChooser1 = new javax.swing.JColorChooser();
         jPpanalPrincipal = new javax.swing.JPanel();
         JLnombre = new javax.swing.JLabel();
         jTCorreo = new javax.swing.JTextField();
@@ -88,6 +89,11 @@ public class TP3 extends javax.swing.JFrame {
         jPpanelSecundario.setForeground(new java.awt.Color(102, 102, 255));
 
         jBrecuperarContraseña.setText("Recuperar contraseña");
+        jBrecuperarContraseña.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBrecuperarContraseñaActionPerformed(evt);
+            }
+        });
 
         jBverificar.setText("Verificar");
         jBverificar.addActionListener(new java.awt.event.ActionListener() {
@@ -219,7 +225,7 @@ public class TP3 extends javax.swing.JFrame {
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPpanalPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JLnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -349,6 +355,10 @@ public class TP3 extends javax.swing.JFrame {
                
     }//GEN-LAST:event_jBIconoOjoActionPerformed
 
+    private void jBrecuperarContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBrecuperarContraseñaActionPerformed
+       JOptionPane.showConfirmDialog(this, "La contraseña ha sido enviada a su correo", "Recuperacion de Contraseña", JOptionPane.ERROR_MESSAGE); // TODO add your handling code here:
+    }//GEN-LAST:event_jBrecuperarContraseñaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -392,6 +402,7 @@ public class TP3 extends javax.swing.JFrame {
     private javax.swing.JButton jBIconoOjo;
     private javax.swing.JButton jBrecuperarContraseña;
     private javax.swing.JButton jBverificar;
+    private javax.swing.JColorChooser jColorChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

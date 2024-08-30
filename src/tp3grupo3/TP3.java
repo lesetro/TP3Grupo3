@@ -20,6 +20,7 @@ public class TP3 extends javax.swing.JFrame {
      */
     public TP3() {
         initComponents();
+        
 
     }
 
@@ -50,6 +51,7 @@ public class TP3 extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Trabajo Practico 3 lado A");
         setForeground(new java.awt.Color(102, 51, 255));
 
         jPpanalPrincipal.setBackground(new java.awt.Color(102, 102, 255));
